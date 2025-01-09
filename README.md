@@ -18,5 +18,5 @@ I have three main sources of data:
    3) IMDb API (not certain) : Can be used for further movie and show information such as cast details.
 
 # Data Visualization 
-I also aim to visualize my data since it can help me uncover patterns and trends in my Netflix viewing habits, Instagram usage and Twitter activity. I am planning to use a time series graph to see how my watching habits change through time (using matplotlib.)
-By creating a bar chart I am aiming to analyze which genres I watch the most and visualize the distribution. Lastly, by using a scatter chart I am planning to analyze the correlation between my socail media screen time and Netflix viewing time. 
+I also aim to visualize my data since it can help me uncover patterns and trends in my Netflix viewing habits. I am planning to use a time series graph to see how my watching habits change through time (using matplotlib.)
+By creating a histogram I am aiming to analyze which genres I watch the most and visualize the distribution.
