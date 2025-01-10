@@ -7,6 +7,7 @@ As someone who spends a considerable amount of time on both Netflix and Instagra
 1) Which genres capture my attention the most?
 2) Is there a correlation between my watching habits and IMDb ratings?
 3) Are there specific behaviors (for example binge-watching) associated with certain genres?
+4) Is there a correlation the between days of the week and watching habits?
 
 # Data Sources
 I have three main sources of data:
@@ -39,12 +40,14 @@ Once the data was cleaned and organized, I began preparing it to test my hypothe
 ## Exploring Genre Preferences
 Using the cleaned dataset, I categorized the genres I watched most frequently. I calculated percentages for each genre and identified any dominant categories in my viewing history.
 
-## Seeking a correlation with IMDb Ratings
+## Seeking for a Correlation with IMDb Ratings
 By integrating IMDb ratings, I investigated whether I tended to watch higher-rated shows and movies or if there were outliers that defied this trend.
 
 ## Exploring Binge-Watching Habits
 I used my Netflix data and seeked for the consecutive days I watched the same series. Then I got their genres from IMDb data to understand which genres capture my attention most.
 
+## Seeking for a Correlation Between the Days of the Week and Watching Habits
+To uncover patterns in my viewing habits, I analyzed the relationship between the days of the week and the number of shows or movies I watched. The goal was to determine whether specific days exhibited higher or lower viewing activity and if there were any statistically significant differences across the week. This analysis aimed to identify potential correlations and trends that could reveal how my watching behavior varies depending on the day.
 
 # Data Visualization 
 First with netflixanalysis.py, I obtained a list of genres their counts in my viewving data: "Thriller": 73,
@@ -69,15 +72,20 @@ First with netflixanalysis.py, I obtained a list of genres their counts in my vi
     "Reality-TV": 1.
 Then, I used this data to create a bar chart that shows the frequencies of different genres I watched in Netflix (genres.py). Here is the bar chart:
 
+<img width="1466" alt="Screenshot 2025-01-09 at 20 13 27" src="https://github.com/user-attachments/assets/11c77ab6-642a-4ac5-bfe2-8be4a3291b08" />
 
-<img width="1470" alt="Screenshot 2025-01-09 at 20 13 27" src="https://github.com/user-attachments/assets/142b40c9-29e2-4c35-bb9a-62eb562b5b99" />
+In order to test my hypothesis.
+H0: there is no correlaton between IMDb ratings and my viewing habits.
+I wroted the python code imdbratings.py and created a scatter chart. I also calculated the Spearman correlation coefficient, and since it was too small (0.23), it was seen that there is no any significant correlation between rating and my watching habits and we can accept the null hypothesis. 
 
-In order to test my hypothesis (H0: there is no correlaton between IMDb ratings and my viewing habits, I wroted the python code imdbratings.py and created a scatter chart. I also calculated the Spearman correlation coefficient, and since it was too small, it was seen that there is really no correlation and we can accept the null hypothesis. 
+<img width="1460" alt="Screenshot 2025-01-09 at 20 58 55" src="https://github.com/user-attachments/assets/e8def0e5-3180-4718-9931-2bd5c4854d09" />
 
-<img width="1470" alt="Screenshot 2025-01-09 at 20 58 55" src="https://github.com/user-attachments/assets/c00db296-f7ce-4302-9c47-3801b611076a" />
+Other than that, I seeked for consecutive days I watched the same show with bingewatching.py, and also visualized this data. I looked for 5 or more consecutive days I watched the same thing. This data showed that, even though I mostly watch genres thriller and drama, I liked to watch comedy and drama consecutively and they capture my attention the most. 
 
-Lastly, I seeked for consecutive days I watched the same show with bingewatching.py, and also visualized this data. I looked for 5 or more consecutive days I watched the same thing. This data showed that, even though I mostly watch genres thriller and drama, I liked to watch comedy and drama consecutively and they capture my attention the most. 
-<img width="1470" alt="Screenshot 2025-01-09 at 23 09 47" src="https://github.com/user-attachments/assets/e27b79ed-4ccd-4fe1-a614-fcd50138446f" />
+<img width="1463" alt="Screenshot 2025-01-09 at 23 09 47" src="https://github.com/user-attachments/assets/0311af51-9760-4544-81e9-031fa0b838c6" />
 
+Lastly, to analyze the relationship between the days of the week and my viewing habits, I plotted a bar graph showing the number of views for each day of the week. The x-axis represents the days (Monday to Sunday), while the y-axis represents the number of views.
+H0: There is no correlation between the days of the week and my watching habits. 
+To test the hypothesis, a Chi-Square test for independence was performed, comparing the observed number of views with an expected uniform distribution (equal views for each day). Since the calculated p-value is .002, which is less than the significance level 0.05, I concluded that the difference was not by chance and I can reject the null hypothesis. (i.e, days and viewing habits are dependent. 
 
-
+<img width="1099" alt="Screenshot 2025-01-10 at 16 53 40" src="https://github.com/user-attachments/assets/57363db3-9147-4431-bb2d-bf8abcdc777a" />
