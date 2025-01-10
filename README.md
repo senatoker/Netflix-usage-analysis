@@ -86,6 +86,6 @@ Other than that, I seeked for consecutive days I watched the same show with bing
 
 Lastly, to analyze the relationship between the days of the week and my viewing habits, I plotted a bar graph showing the number of views for each day of the week. The x-axis represents the days (Monday to Sunday), while the y-axis represents the number of views.
 H0: There is no correlation between the days of the week and my watching habits. 
-To test the hypothesis, a Chi-Square test for independence was performed, comparing the observed number of views with an expected uniform distribution (equal views for each day). Since the calculated p-value is .002, which is less than the significance level 0.05, I concluded that the difference was not by chance and I can reject the null hypothesis. (i.e, days and viewing habits are dependent. 
+To test the hypothesis, a Chi-Square test for independence was performed, comparing the observed number of views with an expected uniform distribution (equal views for each day). Since the calculated p-value is 0.02, which is less than the significance level 0.05, I concluded that the difference was not by chance and I can reject the null hypothesis. (i.e, days and viewing habits are dependent. 
 
 <img width="1099" alt="Screenshot 2025-01-10 at 16 53 40" src="https://github.com/user-attachments/assets/57363db3-9147-4431-bb2d-bf8abcdc777a" />
