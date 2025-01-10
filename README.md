@@ -11,7 +11,7 @@ As someone who spends a considerable amount of time on both Netflix and Instagra
 # Data Sources
 I have three main sources of data:
 
-## 1) Netflix Viewing Data:
+## Netflix Viewing Data:
    I obtained data directly from my Netflix account by downloading my Viewing Activity from the accounting settings. This dataset contains a list of titles of shows or movies I have watched, along with the corresponding dates of viewing. Since this data only includes basic information, I am going to enrich it by fetching additional metadata such as genres, IMDb ratings, release years, and other details using the following:
    1) TMDb API: including: Genres, plot summaries, and release years.
    2) OMDb API: additional Movie details such as IMDb ratings and plot descriptions.
