@@ -7,7 +7,7 @@ As someone who spends a considerable amount of time on both Netflix and Instagra
 1) Which genres capture my attention the most?
 2) Is there a correlation between my watching habits and IMDb ratings?
 3) Are there specific behaviors (for example binge-watching) associated with certain genres?
-4) Is there a correlation the between days of the week and watching habits?
+4) Is there a correlation the between days of the week and my watching habits?
 
 # Data Sources
 I have three main sources of data:
@@ -75,7 +75,9 @@ Then, I used this data to create a bar chart that shows the frequencies of diffe
 <img width="1466" alt="Screenshot 2025-01-09 at 20 13 27" src="https://github.com/user-attachments/assets/11c77ab6-642a-4ac5-bfe2-8be4a3291b08" />
 
 In order to test my hypothesis.
+
 H0: there is no correlaton between IMDb ratings and my viewing habits.
+
 I wroted the python code imdbratings.py and created a scatter chart. I also calculated the Spearman correlation coefficient, and since it was too small (0.23), it was seen that there is no any significant correlation between rating and my watching habits and we can accept the null hypothesis. 
 
 <img width="1460" alt="Screenshot 2025-01-09 at 20 58 55" src="https://github.com/user-attachments/assets/e8def0e5-3180-4718-9931-2bd5c4854d09" />
@@ -85,7 +87,9 @@ Other than that, I seeked for consecutive days I watched the same show with bing
 <img width="1463" alt="Screenshot 2025-01-09 at 23 09 47" src="https://github.com/user-attachments/assets/0311af51-9760-4544-81e9-031fa0b838c6" />
 
 Lastly, to analyze the relationship between the days of the week and my viewing habits, I plotted a bar graph showing the number of views for each day of the week. The x-axis represents the days (Monday to Sunday), while the y-axis represents the number of views.
-H0: There is no correlation between the days of the week and my watching habits. 
+
+H0: There is no correlation between the days of the week and my watching habits.
+
 To test the hypothesis, a Chi-Square test for independence was performed, comparing the observed number of views with an expected uniform distribution (equal views for each day). Since the calculated p-value is 0.02, which is less than the significance level 0.05, I concluded that the difference was not by chance and I can reject the null hypothesis. (i.e, days and viewing habits are dependent. 
 
 <img width="1099" alt="Screenshot 2025-01-10 at 16 53 40" src="https://github.com/user-attachments/assets/57363db3-9147-4431-bb2d-bf8abcdc777a" />
